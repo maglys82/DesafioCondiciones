@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: rgb(212, 198, 45);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+
+}
+
+
+.section-secundaria {
+    display: flex;
+    justify-content: center;
+}
+
+.button-principal {
+    width: 3rem;
+    border-radius: 10%;
+    
+    
+}

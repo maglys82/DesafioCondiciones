@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document3</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h3>Ingresar el Password</h3>
+    </header>
+    <main >
+        <div class= "elemento-principal ">
+            <select id="element1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <select id="element2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+
+            </select>
+            <select id="element3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        
+        <div class="parrafo">
+            <span id="total" ></span>
+        </div>
+ 
+        <section class="calculo-total">
+
+            <button onclick="
+            let password= 0;
+            option1 = document.querySelector('#element1');
+            option2 = document.querySelector('#element2');
+            option3 = document.querySelector('#element3');
+            resultadoTotal= document.querySelector('#total');
+            password = option1.value + option2.value + option3.value ;
+            console.log(password);
+            if (password  == '911') {
+                resultadoTotal.innerHTML = 'Password 1 correcto';
+            }
+            else if (password == '714'){
+                resultadoTotal.innerHTML = 'Password 2 correcto';
+                
+            }
+            else if  (password != '714' && password != '911'){
+                resultadoTotal.innerHTML = 'Password Incorrecto';
+                
+            }
+            
+                
+            ">Ingresar</button>
+
+
+        </section>
+       
+        
+
+    </main>
+</body>
+<script src="index.js"></script>
+
+</html>

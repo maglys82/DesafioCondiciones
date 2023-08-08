@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+     <section class="card">
+            <div >
+                <img id="img1" src="assets/img/imagen1.png" alt=""> 
+                <input id="option1" value="0" type="number">
+            </div>
+            <div>
+                <img  id="img2" src="assets/img/imagen2.png" alt="">
+                <input id="option2" value="0" type="number">
+            </div>
+            <div>
+                <img id="img3"  src="assets/img/imagen3.png" alt="">
+                <input id="option3" value="0" type="number">
+            </div>
+        </section>
+        <div class="parrafo">
+            <span id="total" ></span>
+        </div>
+        
+        <section class="calculo-total">
+            <button onclick="
+            let valorTotal = 0
+            elemento1= document.querySelector('#option1');
+            elemento2= document.querySelector('#option2');
+            elemento3= document.querySelector('#option3');
+            resultadoTotal= document.querySelector('#total');
+            valorTotal = parseInt(elemento1.value,10) + parseInt(elemento2.value,10) + parseInt(elemento3.value,10) ;
+            console.log(valorTotal)
+            if (valorTotal  <= 10) {
+                resultadoTotal.innerHTML = 'Llevas ' + valorTotal + ' stickers';
+            }
+            else if (valorTotal  > 10){
+                resultadoTotal.innerHTML = 'LLevas demasiados stickers';
+                
+            }
+            
+            ">Verificar</button>
+          
+        </section>
+
+        
+    </main>
+</body>
+<script src="index.js"></script>
+
+</html>

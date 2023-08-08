@@ -1,0 +1,15 @@
+imagen1 = document.querySelector("#img1");
+imagen2 = document.querySelector("#img2");
+imagen3 = document.querySelector("#img3");
+imagen1.style.width = "250px";
+imagen1.style.border = "2px solid black"
+imagen2.style.width = "250px";
+imagen2.style.border = "2px solid black"
+imagen3.style.width = "250px";
+imagen3.style.border = "2px solid black"
+imagen1.style.height = "200px";
+imagen2.style.height = "200px";
+imagen3.style.height = "200px";
+elemento1= document.querySelector("#option1");
+elemento2= document.querySelector("#option2");
+elemento3= document.querySelector("#option3");
